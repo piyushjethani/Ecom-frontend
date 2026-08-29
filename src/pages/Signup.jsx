@@ -178,7 +178,7 @@ const Signup = () => {
        
       <p className='text-gray-700 text-sm'>Already have an account?  
      
-         <Link to={'./login'} className="text-purple-600 ml-1 cursor-pointer hover:underline">Login</Link>
+         <Link to="/login" className="text-purple-600 ml-1 cursor-pointer hover:underline">Login</Link>
          </p>
       
     </CardFooter>

@@ -1,5 +1,5 @@
 ﻿import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
 import Home from './pages/Home.jsx'
 import Signup from './pages/Signup.jsx'
@@ -44,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: '/login',
     element: <Login />,
+  },
+  {
+    path: '/signup/login',
+    element: <Navigate to="/login" replace />,
   },
   {
     path: '/verify',
